@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tag abaixo mostra um icone na barra de navegação ao lado do título. -->
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+
+        <!-- site para fontes diversos https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>Game of Thrones</title>
+</head>
+
+<body>
+
+    
+    <div class="fundo-video">
+        <!-- tag VIDEO introduz um video os elementos autoplay= inicia o video; loop= qndo termina volta a produzir; muted= muta o video -->
+        <video class="video" autoplay loop muted>
+        <!-- <tag SOURCE faz a pesquisa de onde o video esta armazenado e o elemento TYPE mostra qual tipo de video esta sendo mostrado, Ex: mp4 -->
+            <source src="./src/video/Game-of-Thrones.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="cabecalho">
+        <a>
+            <!-- dentro do src se o caminho sair ou errar basta clicar CTRL + ESPAÇO -->
+            <!-- elemento ALT dá a descrição da imagem caso ela não seja carregada -->
+            <img class="logo" src="./src/imagens/logo-topo.png" alt="logo Trono de Ferro">
+        </a>
+        <nav>
+            <!-- tag UL cria uma lista não ordenada -->
+            <!-- tag LI cria ima lista de item -->
+            <ul class="menu">
+                <li><a href="file:///C:/Users/vickl/Desktop/Projeto-GameofThrones/index.html">
+                Home</a></li>
+                <li><a href="https://br.ign.com/game-of-thrones/72333/feature/game-of-thrones-um-resumo-de-todas-as-temporadas-da-serie" target="_blank">
+                Temporadas</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Lista_de_personagens_de_Game_of_Thrones" target="_blank">Elenco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/logo-principal.png" alt="imagem do título da série">
+            <p class="descricao">Game of Thrones conta a históra de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir a segurança de todos. Depois de um verão de dez anos, um inverno rigoroso promete chegar com um futuro mais sombrio. Enquanto isso, conspirações e rivalidades correm no jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+            <button class="botao-trailer">Veja o trailer</button>
+           
+        </div>
+        <img class="got" src="./src/imagens/elenco.png" />
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" 
+                src="https://www.youtube.com/embed/x4pJfVoIROc" 
+                title="Trailer oficial" frameborder="1" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
